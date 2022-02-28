@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jn/VS/nZFaJiZ/h3L4V36uy3XKyk0ULi4+GhNAAjcQnL0OSZfmvm2h+1GHRpA+js3R1vuF9U57/DkPJMHIEBaA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rais_ahmad\\source\\repos\\MVCWFE\\Models\\Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rais_ahmad\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\rais_ahmad\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

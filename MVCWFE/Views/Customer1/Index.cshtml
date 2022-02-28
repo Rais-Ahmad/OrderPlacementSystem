@@ -1,0 +1,108 @@
+﻿@model IEnumerable<MVCWFE.ServiceReference1.Customer1>
+
+@{
+    ViewBag.Title = "AllCustomers";
+}
+
+<h2> Customers List </h2>
+
+<button style="border-block-color:darkcyan ; color: white">
+    @Html.ActionLink("Add Customer", "Create")
+</button>
+
+<br /><br />
+
+<table border="3" style="border-color: black">
+    <tr style="border-block-color: black">
+        <th>
+            &nbsp
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </th>
+        <th>
+            &nbsp
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th>
+            &nbsp
+            @Html.DisplayNameFor(model => model.ContactName)
+        </th>
+        <!--
+        <th>
+            @Html.DisplayNameFor(model => model.ContactTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostalCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fax)
+        </th> -->
+    <th>&nbsp Operations </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                &nbsp
+                @Html.DisplayFor(modelItem => item.CustomerID)
+            </td>
+            <td>
+                &nbsp
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td>
+                &nbsp
+                @Html.DisplayFor(modelItem => item.ContactName)
+            </td>
+            <!--
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Region)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostalCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fax)
+            </td>
+                -->
+        <td style="color: darkslategrey" >
+            &nbsp
+            @Html.ActionLink("Edit", "Edit", new { id = (item.CustomerID) })&nbsp |&nbsp
+            @Html.ActionLink("Details", "Details", "Customer1", new { id = (item.CustomerID) }, null) &nbsp|&nbsp
+            @Html.ActionLink("Delete", "Delete", new { id = (item.CustomerID) }, null)&nbsp&nbsp
+        </td>
+        </tr>
+    }
+
+</table>
+

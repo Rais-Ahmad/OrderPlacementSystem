@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MVCWFE.ServiceReference1.Order>
+
+
+@{
+    ViewBag.Title = "OrderDetails";
+}
+
+<h4>OrderDetails</h4>
+<br />
+<br />
+
+<table border="2" style="border-color: black">
+    <tr>
+        <th>&nbsp @Html.DisplayNameFor(model => model.CustomerID)     &nbsp </th>
+        <th>&nbsp @Html.DisplayNameFor(model => model.OrderID)        &nbsp </th>
+        <th>&nbsp @Html.DisplayNameFor(model => model.ShipName)       &nbsp </th>
+        <th>&nbsp @Html.DisplayNameFor(model => model.ShipAddress)    &nbsp </th>
+        <th>&nbsp @Html.DisplayNameFor(model => model.ShipCity)       &nbsp  </th>
+        <th>&nbsp @Html.DisplayNameFor(model => model.ShipRegion)     &nbsp  </th>
+        <th>&nbsp @Html.DisplayNameFor(model => model.ShipPostalCode) &nbsp  </th>
+        <th>&nbsp @Html.DisplayNameFor(model => model.ShipCountry)    &nbsp  </th>
+        <th>&nbsp Operations &nbsp</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>&nbsp @Html.DisplayFor(modelItem => item.CustomerID) &nbsp  </td>
+            <td>&nbsp @Html.DisplayFor(modelItem => item.OrderID) &nbsp  </td>
+            <td>&nbsp @Html.DisplayFor(modelItem => item.ShipName) &nbsp </td>
+            <td>&nbsp @Html.DisplayFor(modelItem => item.ShipAddress) &nbsp </td>
+            <td>&nbsp @Html.DisplayFor(modelItem => item.ShipCity)&nbsp </td>
+            <td>&nbsp @Html.DisplayFor(modelItem => item.ShipRegion)  &nbsp    </td>
+            <td>&nbsp @Html.DisplayFor(modelItem => item.ShipPostalCode) &nbsp        </td>
+            <td>&nbsp @Html.DisplayFor(modelItem => item.ShipCountry)    &nbsp   </td>
+            <td>
+                &nbsp
+
+                @Html.ActionLink("Back", "Details", "Customer1", new { id = (item.CustomerID) }, null) &nbsp | &nbsp
+                @Html.ActionLink("New OrderID", "placeOrder", "Customer1", new { id = (item.CustomerID) }, null) &nbsp | &nbsp
+                @Html.ActionLink("Place Order", "CreateProductOrder", "Customer1", new { id = (item.OrderID), str = (item.CustomerID) }, null) &nbsp
+
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+<br />
+<br />
+<button> @Html.ActionLink("Back to List", "Index") </button>

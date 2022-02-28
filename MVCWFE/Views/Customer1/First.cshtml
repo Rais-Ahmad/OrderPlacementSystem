@@ -1,0 +1,59 @@
+﻿@model IEnumerable<MVCWFE.ServiceReference1.Customer1>
+
+@{
+    ViewBag.Title = "First";
+}
+
+<div>
+    <h4>Customer Detail</h4>
+    <hr />
+
+    <table border="2" style="border-color: black">
+        <tr>
+            <th>&nbsp&nbsp   @Html.DisplayNameFor(model => model.CustomerID)   &nbsp</th>
+            <th>&nbsp&nbsp   @Html.DisplayNameFor(model => model.CompanyName)  &nbsp</th>
+            <th>&nbsp&nbsp   @Html.DisplayNameFor(model => model.ContactName)  &nbsp</th>
+            <th>&nbsp&nbsp   @Html.DisplayNameFor(model => model.ContactTitle) &nbsp</th>
+            <th>&nbsp&nbsp   @Html.DisplayNameFor(model => model.Address)      &nbsp</th>
+            <th>&nbsp&nbsp   @Html.DisplayNameFor(model => model.City)         &nbsp</th>
+            <th>&nbsp&nbsp   @Html.DisplayNameFor(model => model.Region)       &nbsp</th>
+            <th></th>
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>&nbsp @Html.DisplayFor(modelItem => item.CustomerID)   &nbsp </td>
+                <td>&nbsp @Html.DisplayFor(modelItem => item.CompanyName)  &nbsp </td>
+                <td>&nbsp @Html.DisplayFor(modelItem => item.ContactName)  &nbsp </td>
+                <td>&nbsp @Html.DisplayFor(modelItem => item.ContactTitle) &nbsp </td>
+                <td>&nbsp @Html.DisplayFor(modelItem => item.Address)      &nbsp </td>
+                <td>&nbsp @Html.DisplayFor(modelItem => item.City)         &nbsp </td>
+                <td>&nbsp @Html.DisplayFor(modelItem => item.Region)       &nbsp </td>
+                <td>
+                    &nbsp
+                    @Html.ActionLink("Edit", "Edit", new { id = (item.CustomerID) }) &nbsp |
+
+                    @Html.ActionLink("Orders", "OrderDetails", new { id = (item.CustomerID) }) |
+
+                    @Html.ActionLink("Next", "Next", new { id = (item.CustomerID) }) &nbsp
+
+                </td>
+
+            </tr>
+
+        }
+
+    </table>
+
+</div>
+
+<div>
+    <br />  <br />  <br />
+    <button style="border-block-color:darkcyan ">  @Html.ActionLink("Back to List", "Index") </button>
+
+    <button style="border-block-color:darkcyan ">
+        @Html.ActionLink("First", "First")
+    </button>
+</div>
+

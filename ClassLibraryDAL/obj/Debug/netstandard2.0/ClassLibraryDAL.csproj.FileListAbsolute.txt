@@ -1,0 +1,12 @@
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\bin\Debug\netstandard2.0\ClassLibraryDAL.deps.json
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\bin\Debug\netstandard2.0\ClassLibraryDAL.dll
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\bin\Debug\netstandard2.0\ClassLibraryDAL.pdb
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\bin\Debug\netstandard2.0\Models.dll
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\bin\Debug\netstandard2.0\Models.pdb
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\obj\Debug\netstandard2.0\ClassLibraryDAL.csprojAssemblyReference.cache
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\obj\Debug\netstandard2.0\ClassLibraryDAL.AssemblyInfoInputs.cache
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\obj\Debug\netstandard2.0\ClassLibraryDAL.AssemblyInfo.cs
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\obj\Debug\netstandard2.0\ClassLibraryDAL.csproj.CoreCompileInputs.cache
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\obj\Debug\netstandard2.0\ClassLibraryDAL.csproj.CopyComplete
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\obj\Debug\netstandard2.0\ClassLibraryDAL.dll
+C:\Users\rais_ahmad\source\repos\MVCWFE\ClassLibraryDAL\obj\Debug\netstandard2.0\ClassLibraryDAL.pdb
